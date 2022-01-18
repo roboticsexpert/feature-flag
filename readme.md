@@ -7,16 +7,22 @@ https://martinfowler.com/articles/feature-toggles.html
 
 ## Installation
 
-`composer require roboticsexpert/feature-flag`
+```php
+composer require roboticsexpert/feature-flag
+```
 
 after instaling composer package, if you use auto discovery for service providers, everything ok, but if you blocked
 that just add this line to `config/app.php` in `providers` section:
 
-`Roboticsexpert\FeatureFlag\FeatureFlagServiceProvider`
+```php
+Roboticsexpert\FeatureFlag\FeatureFlagServiceProvider::class
+```
 
 after that you should run
 
-`php artisan migrate`
+```bash 
+php artisan migrate
+```
 
 ## Usage
 
