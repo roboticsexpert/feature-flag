@@ -1,12 +1,12 @@
 <?php
 
-namespace Sibche\Domains\User\Models;
+namespace Roboticsexpert\FeatureFlag\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class FeatureFlag
- * @package Sibche\Domains\User\Models
+ * @package Roboticsexpert\FeatureFlag\Models
  * @property string type
  * @property int id
  * @property string name
@@ -18,11 +18,6 @@ class FeatureFlag extends Model
     const TYPE_PUBLIC = 'PUBLIC';
     const TYPE_PRIVATE = 'PRIVATE';
     const TYPE_DISABLED = 'DISABLED';
-
-    const FEATURE_FLAG_SEARCH_AD = 'SEARCH_AD';
-    const FEATURE_FLAG_UPDATE_CENTER = 'UPDATE_CENTER';
-    const FEATURE_HAMSAN_AD = 'HAMSAN_AD';
-    const FEATURE_ZSIGN = 'ZSIGN';
 
 
     const TYPES = [

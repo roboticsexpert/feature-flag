@@ -1,0 +1,26 @@
+{
+    "name": "roboticsexpert/feature-flag",
+    "description": "Easy way to add feature flag functionality to your laravel application",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Roboticsexpert\\FeatureFlag\\": "src/",
+            "Roboticsexpert\\FeatureFlag\\Tests": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mahdi Youseftabar",
+            "email": "roboticsexpert@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Roboticsexpert\\FeatureFlag\\FeatureFlagServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

@@ -1,26 +1,20 @@
 <?php
 
-namespace Sibche\Domains\User\Models;
+namespace Roboticsexpert\FeatureFlag\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class FeatureFlag
- * @package Sibche\Domains\User\Models
+ * @package Roboticsexpert\FeatureFlag\Models
  * @property string feature_flag_name
  * @property int id
- * @property int user_id
+ * @property string user_id
  */
 class FeatureFlagUser extends Model
 {
     protected $table = 'feature_flag_user';
 
     public $timestamps = false;
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-
 
 }

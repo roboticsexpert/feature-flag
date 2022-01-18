@@ -16,8 +16,7 @@ class CreateFeatureFlagsUserTable extends Migration
         Schema::create('feature_flag_user', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->unsignedInteger('user_id')->index();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('user_id')->index();
 
             $table->string('feature_flag_name')->index();
             $table->foreign('feature_flag_name')->references('name')->on('feature_flags')->onDelete('cascade');
