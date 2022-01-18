@@ -91,7 +91,7 @@ $featureFlagService->attachUserToFeatureFlag(1,'FEATURE_1');
 $featureFlagService->detachUserToFeatureFlag(1,'FEATURE_1');
 ```
 
-###Get List of not active features for a user or public user
+### Get List of not active features for a user or public user
 
 first of all is should explain why you should user disabled features intead of enabled features !
 
