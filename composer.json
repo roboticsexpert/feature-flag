@@ -6,7 +6,7 @@
     "autoload": {
         "psr-4": {
             "Roboticsexpert\\FeatureFlag\\": "src/",
-            "Roboticsexpert\\FeatureFlag\\Tests": "tests/"
+            "Roboticsexpert\\FeatureFlag\\Tests\\": "tests/"
         }
     },
     "authors": [
