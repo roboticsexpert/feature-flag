@@ -52,37 +52,37 @@ $featureFlag->getTypes();
 ### Create Feature flag
 
 ```php
-    $featureFlagModel=$featureFlagService->createFeatureFlag('FEATURE_NAME');
-    dd($featureFlagModel->name);
+$featureFlagModel=$featureFlagService->createFeatureFlag('FEATURE_NAME');
+dd($featureFlagModel->name);
 ```
 
 ### Change type of feature flag (Admin)
 
 ```php
-    //OPTIONS: DISABLED , PRIVATE , PUBLIC
-    $featureFlagModel=$featureFlagService->changeFeatureFlagType('FEATURE_NAME','DISABLED');
-    //or    
-    $featureFlagModel=$featureFlagService->changeFeatureFlagType('FEATURE_NAME',\Roboticsexpert\FeatureFlag\Models\FeatureFlag::TYPE_DISABLED);
+//OPTIONS: DISABLED , PRIVATE , PUBLIC
+$featureFlagModel=$featureFlagService->changeFeatureFlagType('FEATURE_NAME','DISABLED');
+//or    
+$featureFlagModel=$featureFlagService->changeFeatureFlagType('FEATURE_NAME',\Roboticsexpert\FeatureFlag\Models\FeatureFlag::TYPE_DISABLED);
 ```
 
 ### Delete feature flag (Admin)
 
 ```php
-    $featureFlagService->destroyFeatureFlag('FEATURE_1');
+$featureFlagService->destroyFeatureFlag('FEATURE_1');
 ```
 
-// Get all Feature flags (Admin)
+### Get all Feature flags (Admin)
 
 ```php
-    $featureFlags=$featureFlagService->getAllFeatureFlags();
+$featureFlags=$featureFlagService->getAllFeatureFlags();
 ```
 
 ### Attach / Detach  a user to/from a feature flag
 
 ```php
-    $featureFlagService->attachUserToFeatureFlag(1,'FEATURE_1');
- 
-    $featureFlagService->detachUserToFeatureFlag(1,'FEATURE_1');
+$featureFlagService->attachUserToFeatureFlag(1,'FEATURE_1');
+
+$featureFlagService->detachUserToFeatureFlag(1,'FEATURE_1');
 ```
 
 ###Get List of not active features for a user or public user
@@ -96,13 +96,12 @@ finally i prefred to implement disabled features and you should return this list
 
 
 ```php
-    //It will return array of names of features (string)
-    //No input for not logged in users
-    $featureFlagService->getDisabledFeatureFlagsName();
+//It will return array of names of features (string)
+//No input for not logged in users
+$featureFlagService->getDisabledFeatureFlagsName();
 
-    //User identifier for logged in users
-    $featureFlags=$featureFlagService->getDisabledFeatureFlagsName(1);
-    
+//User identifier for logged in users
+$featureFlags=$featureFlagService->getDisabledFeatureFlagsName(1);
 ```
     
 
