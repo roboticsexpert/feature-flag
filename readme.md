@@ -28,7 +28,7 @@ php artisan migrate
 
 you can use this project with 2 strategy,Facade or Dependency injection!
 
-I suggest to you to use it with dependecy injection for IDE auto complete feature but use it ass you prefer!
+I suggest to you to use it with dependecy injection for IDE auto complete feature but use it as you prefer!
 
 ### Facade
 

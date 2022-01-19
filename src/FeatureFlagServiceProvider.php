@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Roboticsexpert\FeatureFlag\FeatureFlagServiceProvider;
+namespace Roboticsexpert\FeatureFlag;
 
 use Illuminate\Support\ServiceProvider;
 use Roboticsexpert\FeatureFlag\Services\FeatureFlagService;
