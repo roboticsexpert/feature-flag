@@ -19,10 +19,10 @@ class FeatureFlagService
         if (!$featureFlag)
             return false;
 
-        $featureFlagUser = new FeatureFlagUser();
-        $featureFlagUser->feature_flag_name = $featureFlag->name;
-        $featureFlagUser->user_id = $userId;
-        $featureFlagUser->save();
+        FeatureFlagUser::query()->updateOrCreate([
+            'feature_flag_name' => $featureFlag->name,
+            'user_id'           => $userId,
+        ]);
 
         return true;
     }

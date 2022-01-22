@@ -17,4 +17,5 @@ class FeatureFlagUser extends Model
 
     public $timestamps = false;
 
+    protected $fillable = ['feature_flag_name', 'user_id'];
 }
